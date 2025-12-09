@@ -66,4 +66,6 @@ Only a small number of significant genes appear downregulated in HPV‑positive 
 
 ![PCA Plot](results/PCA_plot.png)
 
+The volcano plot shows a strong asymmetry, many more genes are significantly upregulated in HPV-positive tumors compared to HPV-negative ones. This indicates HPV infection induces a distinct transcriptional activation signature, even though PCA shows only subtle global differences.
+
 ![Volcano Plot](results/Volcano_plot.png)
