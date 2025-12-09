@@ -4,15 +4,17 @@ HNSCC transcriptome analysis and logica building
 
 ## R packages
 
-Bioconductor
-TCGAbiolinks
-DESeq2
-ggplot
+- Bioconductor
+- TCGAbiolinks
+- DESeq2
+- ggplot
+  
 ## Data
 https://portal.gdc.cancer.gov/projects/TCGA-HNSC
 
 ## Downloading
 #Doownload the data from GDC data base
+
 query <- GDCquery(
   project = "TCGA-HNSC",
   data.category = "Transcriptome Profiling",
@@ -34,4 +36,8 @@ query_cli <- GDCquery(project = "TCGA-HNSC",
                   )
 GDCdownload(query_cli)
 ## Data filtering
-- 
+- Desq2 for genes and patient filtering
+- Filtering patient base on Pharinx or oral cavity tissu
+- Check for patient with metastasis
+- HC to control patient HBV+ and HBV-
+
