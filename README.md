@@ -41,3 +41,29 @@ GDCdownload(query_cli)
 - Check for patient with metastasis
 - HC to control patient HBV+ and HBV-
 
+
+### NOTE AND ADDITIONS FROM NAGWA (analysis + visualisations)
+
+- Implemented PCA analysis using variance-stabilised data to assess global structure between HPV+ and HPV– HNSCC tumours.
+- Created `PCA_plot.png` (saved in /results) showing partial overlap between groups, indicating limited global transcriptomic separation.
+- Added DESeq2 differential expression analysis comparing HPV+ vs HPV– tumours.
+- Generated DE results tables:
+  - `DE_results.csv`
+  - `DE_results.rds`
+- Added volcano plot visualisation (`Volcano_plot.png`) highlighting significantly up- and down-regulated genes between HPV groups.
+- Updated `data_analysis_hackathon.R` to include:
+  - PCA saving code  
+  - DESeq2 pipeline  
+  - Volcano plot generation  
+  - Automated saving of outputs into /results
+
+
+### Key Findings From Volcano Plot
+
+So what i have found the volcano plot reveals a clear asymmetry, with a larger number of genes significantly upregulated in HPV‑positive tumours, shown by the enriched significant points on the right side of the plot.
+
+Only a small number of significant genes appear downregulated in HPV‑positive tumours, indicating the biological impact of HPV is primarily associated with increased expression of certain genes. This pattern suggests that HPV infection drives distinct transcriptional activity, potentially related to viral response pathways, immune signalling, and tumour behaviour. These results support the idea that HPV+ HNSCC tumours possess a unique gene expression profile compared to HPV– tumours, even though PCA shows limited global separation.
+
+![PCA Plot](results/PCA_plot.png)
+
+![Volcano Plot](results/Volcano_plot.png)
