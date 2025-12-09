@@ -1,0 +1,6 @@
+library(TCGAbiolinks)
+query <- GDCquery( project = "TCGA-HNSC", data.category = "Transcriptome Profiling", data.type = "Gene Expression Quantification", workflow.type = "STAR - Counts", sample.type = c("Primary Tumor") ) 
+GDCdownload(query)
+raw_count_1 <- GDCprepare(query,summarizedExperiment = TRUE)
+query_cli <- GDCquery(project = "TCGA-HNSC", data.category = "Clinical", data.type = "Clinical Supplement" ) 
+GDCdownload(query_cli)
