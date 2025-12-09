@@ -69,3 +69,29 @@ Only a small number of significant genes appear downregulated in HPV‑positive 
 The volcano plot shows a strong asymmetry, many more genes are significantly upregulated in HPV-positive tumors compared to HPV-negative ones. This indicates HPV infection induces a distinct transcriptional activation signature, even though PCA shows only subtle global differences.
 
 ![Volcano Plot](results/Volcano_plot.png)
+
+
+
+## Top 5 Up and Down regulate genes
+
+ Gene name | Gene stable ID version | UP/DOWN  
+
+ STAG3	| ENSG00000066923.20 | UP 
+
+ SMC1B	| ENSG00000077935.18	| UP 
+
+ UPB1	| ENSG00000100024.16	| UP 
+
+ TAF7L	| ENSG00000102387.16	| UP 
+
+ ZFR2	| ENSG00000105278.13	| UP 
+
+ FOLR3	| ENSG00000110203.11	| DOWN 
+
+ RTN4	| ENSG00000115310.20	| DOWN 
+
+ MMP13	| ENSG00000137745.14	| DOWN 
+
+ IGFL3	| ENSG00000188624.3	| DOWN 
+
+ LUARIS |	ENSG00000231638.1	| DOWN 
